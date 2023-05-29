@@ -1,0 +1,11 @@
+[data-id *="ext"]{
+    color: orangered;
+}
+
+/* p ~ div{ 
+    color: pink;
+}*/
+
+div ~ p{
+    color: yellowgreen;
+}
