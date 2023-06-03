@@ -5,34 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/css/fs-style.css">
     <title>Food Subscription</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div .nav-bar-heading-container{
+            margin:inherit;
+            padding: inherit;
+            box-sizing:content-box;
+        }
+
+        ul .navbar-list-links{
+            margin: 0 0 100% 70%;
+        }
+        
+    </style>
 </head>
 <body>
     <!-- FS header -->
-    <header>
-        
+    <header class="header">
+        <nav>
+            <ul class="navbar-list-links">
+                <li>
+                    <a href="">Features</a>
+                </li>
+                <li>
+                    <a href="">Details</a>
+                </li>
+                <li>
+                    <a href="">REVIEWS</a>
+                </li>
+                <li>
+                    <a href="">Plans</a>
+                </li>
+                <li>
+                    <a href="">CONTACT US</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hero-container">
+            <div class="hero-heading-continer">
+                <h1 class="hero-heading-text" id="landing-page-heading-text">
+                    MEAL PLANS.<br>
+                    FOR <span id="hero-heading-red-text">EVERYONE</span>
+                </h1>
+            </div>
+            <div class="hero-btn-container">
+                <button type="submit" class="hero-btn-book" id="btn-book">Book Now</button>
+                <button type="submit" class="hero-btn-expand-info" id="btn-expand-info">Show me more</button>
+            </div>
+        </div>
     </header>
     <!-- FS Main content -->
     <main>
         <!-- Awesome feature section -->
         <section title="AWESOME FEATURES">
-            <div>
-                <h2>AWESOME FEATURES</h2>
-                <div>
+            <div class="awesonme-feature-container">
+                <h2 class="awesome-feature-heading" id="heading-awesome-feature-heading">AWESOME FEATURES</h2>
+                <div class="awesome-feature-tile-container" id="awesome-feature-tile-365days">
                     <i class="fa-solid fa-calendar-plus" ></i>
-                    <h3>365 DAYS/YEAR</h3>
-                    <p>
+                    <h3 id="awesome-feature-tile-heading-365days">365 DAYS/YEAR</h3>
+                    <p id="awesome-feature-tile-365days-text">
                         Never cook again! We relaly mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.
                     </p>
                 </div>
-                <div>
+                
+                <div class="awesome-feature-tile-container">
                     <i class="fa-sharp fa-solid fa-truck-fast"></i>
                     <h3>30 MINUTES OR FREE</h3>
                     <p>
                         You're only twenty minutes away.
                     </p>
                 </div>
+                
                 <div>
                     <i class="fa-solid fa-carrot"></i>
                     <h3>100% ORGANIC</h3>
@@ -47,48 +96,77 @@
 
         <!-- Steps to follow section -->
         <section title="STEPS TO FOLLOW">
-            <h2>STEPS TO FOLLOW</h2>
-            <div class="steps-to-follow-img">
+            <h2 class="steps-to-follow-heading">STEPS TO FOLLOW</h2>
+            <div class="steps-to-follow-img-container">
                 <img src="assets/images/Capture.PNG" alt="">
             </div>
-            <div>
-                <ol>
-                    <li>Choose the subscription plan that best fits your needs and sign up today.</li>
-                    <li>Order your delicious meal using our mobile app or website. Or you can even call us!</li>
-                    <li>Enjoy your meal after less than 20 minutes. See you the next time!</li>
-                </ol>
+            <div class="steps-to-follow-list-continer">
+                <ul class="steps-to-follow-list-of-options">
+                    <li>
+                        <span>1</span>
+                        <p>Choose the subscription plan that best fits your needs and sign up today.</p>
+                    </li>
+                    <li>
+                        <span>2</span>
+                        <p>
+                            Order your delicious meal using our mobile app or website. Or you can even call us!
+                        </p>
+                    </li>
+                    <li>
+                        <span>3</span>
+                        <p>Enjoy your meal after less than 20 minutes. See you the next time!</p>
+                    </li>
+                </ul>
             </div>
         </section>
         <!-- Reviews secton -->
         <section title="REVIEWS">
             <h2>REVIEWS</h2>
             <div class="reviews-container">
-                <div>
+                <div class="reviews-customer-img-container">
                     <img src="assets/images/customer.jpg" alt="">
                 </div>
-                <div>
-                    <h4>DAVID SMITH</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur dipisicing elit. Animi iure odio, quod nisi cilis commodi ut sunt ipsam, magnam eius epellat perferendis porro, iste voluptas! </p>
+                <div class="review-text-container">
+                    <h4 class="customer-name" id="customer-name">DAVID SMITH</h4>
+                    <p class="customer-review" id="customer-review">Lorem ipsum dolor sit amet consectetur dipisicing elit. Animi iure odio, quod nisi cilis commodi ut sunt ipsam, magnam eius epellat perferendis porro, iste voluptas! </p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
                 </div>
             </div>
             
             <div class="reviews-container">
-                <div>
+                <div class="review-customer-img-container">
                     <img src="assets/images/customer.jpg" alt="">
                 </div>
-                <div>
-                    <h4>DAVID SMITH</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur dipisicing elit. Animi iure odio, quod nisi cilis commodi ut sunt ipsam, magnam eius epellat perferendis porro, iste voluptas! </p>
+                <div class="review-text-container">
+                    <h4 class="customer-name" id="customer-name">DAVID SMITH</h4>
+                    <p class="customer-review" id="customer-review">Lorem ipsum dolor sit amet consectetur dipisicing elit. Animi iure odio, quod nisi cilis commodi ut sunt ipsam, magnam eius epellat perferendis porro, iste voluptas! </p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
                 </div>
             </div>
             
             <div class="reviews-container">
-                <div>
-                    <img src="assets/images/customer.jpg" alt="">
+                <div class="review-customer-img-container">
+                    <img src="assets/images/customer.jpg" alt="customer-image">
                 </div>
-                <div>
-                    <h4>DAVID SMITH</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur dipisicing elit. Animi iure odio, quod nisi cilis commodi ut sunt ipsam, magnam eius epellat perferendis porro, iste voluptas! </p>
+                <div class="review-text-container">
+                    <h4 class="customer-name" id="customer-name">DAVID SMITH</h4>
+                    <p class="customer-review" id="customer-review">Lorem ipsum dolor sit amet consectetur dipisicing elit. Animi iure odio, quod nisi cilis commodi ut sunt ipsam, magnam eius epellat perferendis porro, iste voluptas! </p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
                 </div>
             </div>
         
@@ -96,44 +174,111 @@
         <!-- Pricing plans secton -->
         <section>
             <h2>START EATING HEALTHY TOADY</h2>
-
+            <div class="price-container">
+                <h3>Premium</h3>
+                <h4>$399/month</h4>
+                <p>That's only 13.30$ per meal</p>
+                <div class="price-feature-list-container">
+                    <ul class="price-features">
+                        <li>1 meal every day</li>
+                        <li>Order 24/7</li>
+                        <li>Access to newest creations</li>
+                        <li>Free delivery</li>
+                    </ul>
+                </div>
+                <button type="submit">I'm hung</button>
+            </div>
+            <div class="price-container">
+                <h3>Premium</h3>
+                <h4>$399/month</h4>
+                <p>That's only 13.30$ per meal</p>
+                <div class="price-feature-list-container">
+                    <ul class="price-features">
+                        <li>1 meal every day</li>
+                        <li>Order 24/7</li>
+                        <li>Access to newest creations</li>
+                        <li>Free delivery</li>
+                    </ul>
+                </div>
+                <button type="submit">I'm hung</button>
+            </div>
+            <div class="price-container">
+                <h3>Premium</h3>
+                <h4>$399/month</h4>
+                <p>That's only 13.30$ per meal</p>
+                <div class="price-feature-list-container">
+                    <ul class="price-features">
+                        <li>1 meal every day</li>
+                        <li>Order 24/7</li>
+                        <li>Access to newest creations</li>
+                        <li>Free delivery</li>
+                    </ul>
+                </div>
+                <button type="submit">I'm hung</button>
+            </div>
         </section>
         <!-- Contact us section -->
         <section>
             <h2>CONTACT US</h2>
-            <div class="contact-us-container">
-                <div>
-                    <video src="assets/videos/Avocado.mp4" autoplay loop style="padding: auto; margin:0%; width: 100%;"></video>
+            <div class="contact_us_container">
+                <div class="contact_us_video">
+                    <video src="assets/videos/Avocado.mp4" autoplay loop width="50%"></video>
                 </div>
                 <div>
                     <form action="">
-                        <label>Name:</label>
-                        <br>
-                        <input title="name" type="text"/>
-                        <br>
-                        <label>Email:</label>
-                        <br>
-                        <input title="email" type="email">
-                        <br>
-                        <label>How did you find us:</label>
-                        <br>
-                        <input title="name" type="text">
-                        <br>
-                        <label>Drop us a line:</label>
-                        <br>
-                        <input type="text" title="comment">
-                        <br>
-                        <input type="checkbox" title="terms_and_conditions"><label>I have read and agree with all the Privacy Policy and terms Conditions</label>
+                        <div>
+                            <input title="name" id="name" type="text"/>
+                            <label for="name">Name:</label>
+                        </div>
+                        <div>
+                            <input title="email" id="email" type="email">
+                            <label for="email">Email:</label>
+                        </div>
+                        <div>
+                            <select name="how-to-find-us-options" title="how-to-find-us-options" id="find-us-options">
+                                <option value="">Friends</option>
+                                <option value="">Search</option>
+                                <option value="">Advertisement</option>
+                                <option value="">Other</option>
+                            </select>
+                            <label for="how-did-you-find">How did you find us:</label>
+                        </div>
+                        <div>
+                            <input type="text" id="comment" title="comment">
+                            <label for="comment">Drop us a line:</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="terms-condition" title="terms_and_conditions"><label>I have read and agree with all the Privacy Policy and terms Conditions</label>
+                            <label for="terms-condition">I have read and agree with all the Privacy Policy and Terms & Conditions</label>
+                        </div>
+                        <div>
+                            <button type="submit">Send Message</button>
+                        </div>
                     </form>
-
                 </div>
             </div>
         </section>
     </main>
     <!-- FS Footer -->
     <footer>
+        <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">iOS App</a></li>
+            <li><a href="">Android App</a></li>
+        </ul>
 
+        <ul>
+            <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          </ul>
+          
+          <div>
+            <p>Copyright 2023 EVERYONE. All rights reverved.</p>
+          </div>    
     </footer>
-    
+    <!-- Non critical CSS -->
+    <link rel="stylesheet" href="/css/fs-style.css">
 </body>
 </html>
