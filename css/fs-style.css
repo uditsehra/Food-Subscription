@@ -1,4 +1,255 @@
-h2, h3 {
-    color: bisque;
+.hero-banner{
+    width: 100%;
+    height: 100vh;
+    background:url("/Food-Subscription/assets/images/foodiesfeed.com_pizza-ready-for-baking.jpg") no-repeat;
+    background-size: cover;
+}
 
+.hb-layer{
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hb-head{
+    position: relative;
+    left: 14%;
+    top: 25%;
+    font-size: 9.0rem;
+}
+
+.hb-btn{
+    position: absolute;
+    top: 60%;
+    left: 16%;
+}
+
+#hb-btn-book{
+    color: #ffffff;
+    background-color: #ff4161;
+    height: 7rem;
+    width: 18rem;
+    border: 0;
+    justify-content: center;
+    border-radius: 5rem;
+    font-size: 2.5rem;
+}
+
+#hb-btn-info{
+    background-color: transparent;
+    color: #ff4161;
+    height: 7rem;
+    width: 25rem;
+    justify-content: center;
+    border: 1px solid #ff4161;
+    border-radius: 5rem;
+    font-size: 2.5rem;
+    margin-left: 20rem;
+}
+
+.underline{
+    padding-top: 1.0rem;
+    border-bottom: 2px solid red;
+    height: 0;
+    width: 8%;
+    margin: auto;
+    /* padding-bottom: 2rem; */
+}
+
+.awesome-feature{
+    margin: 4rem 0 7rem 0;
+    background-color: #ffffff;
+}
+
+.af-container{
+    display: flex;
+    flex-direction: wrap;
+    margin: 2.5rem;
+    justify-content: space-around;
+    /* box-shadow: ; */
+}
+
+.af-item{
+    /* border: 1px solid blue; */
+    flex-basis: 30%;
+    padding: 2.0rem;
+    padding-bottom: 4rem;
+    background-color: #ffffff;
+    color: #9b9b9e;
+    box-shadow: 0 10px 30px 0 rgba(100, 100, 111, 0.2);
+}
+
+.af__heading{
+    padding: 1rem;
+    text-align: center;
+}
+
+.af-item__headingwrapper{
+    text-align: center;
+    font-size: 5.0rem;
+}
+
+
+/* Navigation Bar */
+.navbar-content{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: transparent;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    text-transform: uppercase;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover{
+    cursor: pointer;
+    color: #ff4161;
+}
+
+i{
+    padding: 1rem;
+}
+
+
+/* STEPS TO FOLLOW SECTION */
+.steps-to-follow{
+    margin-top: 10rem;
+}
+
+.stf-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.stf-img-container img{
+    height: 30%;
+    width: 80%;
+    margin: 10%;
+}
+
+.stf-img-container{
+    margin: 4rem;
+}
+
+.stf-li-container{
+    margin: 4rem;
+    color: #9b9b9e;
+}
+
+
+.stf-li-container li::before {
+    content: counter(li);
+    color: red;
+    display: inline-block; width: 2em;
+}
+
+.stf-heading{
+    text-align: center;
+    padding: 1rem;
+}
+
+
+/* Reviews */
+
+.reviews{
+    margin-top: 2rem;
+    background:url("/Food-Subscription/assets/images/foodiesfeed.com_pizza-ready-for-baking.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+}
+
+.rev-mask{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* .rev-mask h2{
+    padding-top: 4rem;
+
+} */
+
+.rev-container{
+    display: flex;
+    padding-top: 2rem;
+    flex-direction: row;
+    box-sizing: border-box;
+    /* border: 1px solid white; */
+    align-items: center;
+    align-content: center;
+}
+
+.rev-item{
+    margin: 2rem;
+    padding: 2rem;
+    /* border: 1px solid yellow; */
+    background-color: #ffffff;
+}
+
+.rev-img img{
+    padding: 2rem;
+    width: 14rem;
+    height: 14rem;
+    border-radius: 100%;
+}
+
+.rev-text{
+    padding: 0.5rem;
+}
+
+.rev-text h4{
+    color: #010101;
+    text-align: center;
+}
+
+.rev-text p{
+    color: #9b9b9e;
+
+}
+.rev-text i{
+    font-size: 2rem;
+    color: #ff4161;
+}
+
+
+@media only screen and (min-width:200px) and (max-width:480px){
+    
+    *{
+        align-items: center;
+    }
+    .header{
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .af-container{
+        margin: 2.0rem;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .af-item{
+        flex: 0 10% 100%;
+        margin-top: 1.0rem;
+    }
 }
