@@ -1,8 +1,11 @@
 .hero-banner{
     width: 100%;
     height: 100vh;
-    background:url("/Food-Subscription/assets/images/foodiesfeed.com_pizza-ready-for-baking.jpg") no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    background:url("/Food-Subscription/assets/images/pizza-min.png") no-repeat;
     background-size: cover;
+    /* border: 1px solid green; */
 }
 
 .hb-layer{
@@ -14,17 +17,19 @@
 }
 
 .hb-head{
-    position: relative;
+    /* position: relative; */
+    position: absolute;
     left: 14%;
     top: 25%;
+    text-align:left;
     font-size: 9.0rem;
+    display: flex;
+    flex-flow: column wrap;
+    /* flex-wrap: wrap; */
+    /* border: 1px solid green; */
+
 }
 
-.hb-btn{
-    position: absolute;
-    top: 60%;
-    left: 16%;
-}
 
 #hb-btn-book{
     color: #ffffff;
@@ -38,6 +43,8 @@
 }
 
 #hb-btn-info{
+    /* border: 1px solid green; */
+
     background-color: transparent;
     color: #ff4161;
     height: 7rem;
@@ -46,7 +53,7 @@
     border: 1px solid #ff4161;
     border-radius: 5rem;
     font-size: 2.5rem;
-    margin-left: 20rem;
+    /* margin-left: 20rem; */
 }
 
 .underline{
@@ -59,13 +66,16 @@
 }
 
 .awesome-feature{
+    /* border: 1px solid green; */
+
     margin: 4rem 0 7rem 0;
     background-color: #ffffff;
 }
 
 .af-container{
     display: flex;
-    flex-direction: wrap;
+    /* flex-direction: wrap; */
+    /* flex-wrap: wrap; */
     margin: 2.5rem;
     justify-content: space-around;
     /* box-shadow: ; */
@@ -74,6 +84,8 @@
 .af-item{
     /* border: 1px solid blue; */
     flex-basis: 30%;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 2.0rem;
     padding-bottom: 4rem;
     background-color: #ffffff;
@@ -84,6 +96,8 @@
 .af__heading{
     padding: 1rem;
     text-align: center;
+    /* border: 1px solid green; */
+
 }
 
 .af-item__headingwrapper{
@@ -105,10 +119,6 @@
     align-items: flex-end;
 }
 
-ul{
-    list-style-type: none;
-}
-
 a:link, a:visited{
     text-decoration: none;
     color: #ffffff;
@@ -123,9 +133,15 @@ i{
     padding: 1rem;
 }
 
+ul{
+    list-style: none;
+}
+
 
 /* STEPS TO FOLLOW SECTION */
 .steps-to-follow{
+    /* border: 1px solid green; */
+
     margin-top: 10rem;
 }
 
@@ -135,7 +151,11 @@ i{
     align-items: center;
     align-content: center;
     justify-content: center;
-}
+    flex-wrap: wrap;
+    /* border: 1px solid green; */
+
+} 
+
 .stf-img-container img{
     height: 30%;
     width: 80%;
@@ -146,64 +166,118 @@ i{
     margin: 4rem;
 }
 
-.stf-li-container{
-    margin: 4rem;
-    color: #9b9b9e;
-}
-
-
-.stf-li-container li::before {
-    content: counter(li);
-    color: red;
-    display: inline-block; width: 2em;
-}
-
 .stf-heading{
     text-align: center;
     padding: 1rem;
 }
+
+.stf-li-container{
+    margin-left: 20%;
+}
+
+.stf-li-container ol{
+    color: #9b9b9e;
+    counter-reset: item;
+    list-style-type: none;
+    line-height: 2.2;
+    margin-left: -40px;
+}
+
+.stf-li-container ol li{
+    display: block;
+    position: relative;
+    padding: 4rem;
+}
+
+.stf-li-container ol li:before{
+    content: counter(item) " ";
+    counter-increment: item;
+    color: #ff4161;
+    position: absolute;
+    top: 50%;
+    margin-top: -5rem;
+    margin-left: -3em;
+    background: #ffffff;
+    height: 8rem;
+    width: 8rem;
+    line-height: 8rem;
+    text-align: center;
+    border: 3px solid #ff4161;
+    border-radius: 8rem;
+    font-weight: auto;
+    font-size: 4rem;
+}
+
 
 
 /* Reviews */
 
 .reviews{
     margin-top: 2rem;
-    background:url("/Food-Subscription/assets/images/foodiesfeed.com_pizza-ready-for-baking.jpg") no-repeat;
+    background:url("/Food-Subscription/assets/images/pizza-min.png") no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 90vh;
     text-align: center;
+    /* border: 1px solid green; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* align-content: center; */
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+
     
 }
 
+.reviews h2{
+    padding-top: 4rem;
+}
+
 .rev-mask{
-    background-color: rgba(0, 0, 0, 0.7);
+    /* border: 1px solid green; */
+    background-color: rgba(0, 0, 0, 0.9);
+    background-size: cover;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
 }
 
-/* .rev-mask h2{
-    padding-top: 4rem;
-
-} */
-
 .rev-container{
+    /* border: 1px solid green; */
+    /* margin: 2rem; */
+    /* padding: 2rem; */
+    padding-top: 6rem;
     display: flex;
-    padding-top: 2rem;
     flex-direction: row;
-    box-sizing: border-box;
-    /* border: 1px solid white; */
     align-items: center;
     align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    /* gap: 1rem; */
+    /* overflow: hidden; */
 }
 
 .rev-item{
+    /* border: 1px solid black; */
+    /* border: 1px solid green; */
     margin: 2rem;
-    padding: 2rem;
-    /* border: 1px solid yellow; */
+    /* padding: 2rem; */
+    width: 25%;
+    /* max-width: 100%; */
+    max-height: 60vh;
+    height: 70%;
+    /* text-align: center; */
+    text-align:center;
     background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* overflow: clip; */
+    align-items:center;
+    align-content:center;
+    justify-content:space-evenly;
+    /* padding: 2rem; */
 }
 
 .rev-img img{
@@ -219,6 +293,7 @@ i{
 
 .rev-text h4{
     color: #010101;
+    font-weight: 500;
     text-align: center;
 }
 
@@ -229,8 +304,287 @@ i{
 .rev-text i{
     font-size: 2rem;
     color: #ff4161;
+    /* text-align: center; */
 }
 
+/* Prrice section */
+.price{
+    /* margin: 2rem; */
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+
+    /* border: 1px solid green; */
+}
+
+.price-container{
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    /* padding: 3rem; */
+    /* padding: 5rem; */
+}
+
+.price-item{
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    color: #9b9b9e;
+    margin: 3rem;
+    padding-left: 4rem;
+    padding-right:4rem;
+    border: 1px solid #9b9b9e;
+    border-radius: 5%;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px 0 rgba(100, 100, 111, 0.4);
+
+    /* flex-grow: 1; */
+    /* flex-shrink: 0.5; */
+}
+
+.price-item h3{
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.price-item h4{
+    color: #9b9b9e;
+}
+
+
+.price-item h4 span{
+    text-align: left;
+    padding: 1rem;
+    font-size: 3rem;
+    color: #ff4161;
+    /* flex-shrink: 1; */
+}
+
+.underline-2{
+    padding-top: 1.0rem;
+    border-bottom: 2px solid #9b9b9e;
+    height: 0;
+    width: 100%;
+    margin: auto;
+}
+
+.underline-2-2{
+    padding-top: 1.0rem;
+    border-bottom: 2px solid #9b9b9e;
+    height: 0;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 4rem;
+}
+
+.price-btn{
+    /* width: 10rem; */
+    margin: -4rem;
+    color: white;
+    background-color: #ff4161;
+    border: 0px;
+    font-size: 2rem;
+    padding: 1.5rem;
+    border-radius: 8rem;
+    /* margin: -4rem; */
+}
+/* .price-btn{ */
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+/* } */
+
+
+/* CONTACT US */
+.contact-us{
+    padding-top: 2rem;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #272b30;
+}
+
+.cu-container{
+    margin: 0;
+    padding-top: 4rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items:center;
+    align-content: center;
+    justify-content:center;
+}
+
+.cu-item{
+    color: #9b9b9e;
+    border: 1px solid green;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:center;
+
+}
+
+.cu-img{
+    /* padding: 8rem; */
+    width: 700px;
+    height: 500px;
+    min-width: 300px;
+    min-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("/Food-Subscription/assets/images/Avocado.gif");
+    background-size: cover;
+}
+
+.cu-form-item{
+    text-align: left;
+    /* padding: 8rem; */
+    /* align-items: center; */
+    /* align-content: center; */
+}
+
+.cu-form-item{
+    padding: 0.5rem;
+}
+
+.cu-form-item label{
+    font-size: 2.5rem;
+    /* padding-top: 2rem; */
+    /* padding-bottom: 2rem; */
+
+}
+
+.cu-form-item input, select{
+    width: 100%;
+    height: 4rem;
+}
+
+.cu-form-item select{
+    color: #9b9b9e;
+}
+
+.tnc-container{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#tnc{
+    margin-top: 1rem;
+    /* padding-top: 2rem; */
+    padding: 0;
+    /* width: 5%; */
+}
+
+#tnc-label{
+    font-size: 2rem;
+    color: #9b9b9e;
+    /* width: 90%; */
+}
+
+#comment{
+    height: 10rem;
+}
+
+#cu-btn-submit{
+    /* width: 40%; */
+    margin-top: 5rem;
+    font-size: 2.5rem;
+    padding: 1rem;
+    color: #ffffff;
+    background-color: #ff4161;
+    border: 0;
+    border-radius: 8rem;
+    align-self: center;
+
+    /* width: 100%; */
+}
+
+
+
+/* FOOTER */
+.footer{
+    padding: 2rem;
+    /* border: 1px solid green; */
+    height: 15vh;
+    width: 100%;
+    background-color: #434141;
+    background-size: cover;
+}
+
+.ftr-container{
+    padding-top: 1rem;
+    /* border: 1px solid green; */
+
+    display: flex;
+    /* font-size: 2rem; */
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.ftr-item i{
+    color: #272b30;
+    background-color: #9b9b9e;
+    font-size: 3rem;
+    /* padding: 1rem; */
+    /* border-radius: 1%; */
+    /* border: 0px solid #ff4161; */
+}
+
+.ftr-item{
+    width: 100%;
+    /* border: 1px solid green; */
+    text-align: center;
+}
+
+.ftr-item-container{
+    /* align-items: flex-start; */
+    display: flex;
+    width: 100%;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    /* align-items: flex-start; */
+    align-content: center;
+    /* justify-content: flex-start; */
+}
+
+#ftr-item-text{
+    /* text-align: left; */
+    width: 50%;
+    align-items: flex-start;
+    /* align-content: center; */
+    justify-content: space-evenly;
+}
+
+#ftr-item-social{
+    /* text-align: right; */
+    align-items: flex-end;
+    /* align-content: center; */
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+
+.ftr-item li{
+    list-style: none;
+    display: inline-block;
+}
+
+.ftr-item p{
+    color: #9b9b9e;
+}
 
 @media only screen and (min-width:200px) and (max-width:480px){
     
