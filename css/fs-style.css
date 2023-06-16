@@ -425,7 +425,7 @@ ul{
 
 .cu-item{
     color: #9b9b9e;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     margin: 2rem;
     display: flex;
     flex-direction: column;
@@ -442,7 +442,7 @@ ul{
     min-height: 200px;
     display: flex;
     flex-wrap: wrap;
-    background-image: url("/Food-Subscription/assets/images/Avocado.gif");
+    background-image: url("/Food-Subscription/assets/images/Avocado.gif") no-repeat;
     background-size: cover;
 }
 
