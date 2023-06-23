@@ -17,10 +17,10 @@
 }
 
 .hb-head{
-    /* position: relative; */
-    position: absolute;
-    left: 14%;
+    position: relative;
+    /* position: absolute; */
     top: 25%;
+    left: 14%;
     text-align:left;
     font-size: 9.0rem;
     display: flex;
@@ -558,6 +558,7 @@ ul{
     
     *{
         align-items: center;
+        /* font-size: 10.0%; */
         /* align-content: center; */
         /* box-sizing: content-box; */
     }
@@ -570,12 +571,24 @@ ul{
         position: relative;
         height: fit-content;
         width: 100%;
+        top: 0;
+        left: 0;
     }
 
     .navbar-container{
-        position: absolute;
+        position: relative;
+        display: flex;
         align-items: center;
-        justify-items: center;
+        align-content: center;
+        /* justify-items: center; */
+        justify-content: space-evenly;
+    }
+
+    .hb-head{
+        position: absolute;
+        align-content: center;
+        box-sizing: content-box;
+        /* align-items: center; */
     }
 
     .af-container{
@@ -588,4 +601,6 @@ ul{
         flex: 0 10% 100%;
         margin-top: 1.0rem;
     }
+
+
 }
